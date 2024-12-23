@@ -63,7 +63,7 @@ git clone [[https://github.com/your-username/lysoclear.git](https://github.com/P
 - **Disable Gutenberg**
 
 
-### 6. Додавання контенту
+### 5. Додавання контенту
 Створіть сторінки в WordPress, використовуючи шаблони теми:
 - **Головна сторінка** (`page-home.php`)
 - **About Us** (`page-about-us.php`)
