@@ -1,6 +1,7 @@
 # Lysoclear – WordPress Theme
 
-![Lysoclear](https://via.placeholder.com/1200x600.png?text=Lysoclear+Website)
+![image](https://github.com/user-attachments/assets/cbcc4127-a3a7-40fe-ae3b-9efebcf66f82)
+
 
 **Lysoclear** – це власна тема для WordPress, створена з нуля для компанії, що займається медичними послугами. Тема розроблена з урахуванням сучасних веб-стандартів, повністю адаптивна та інтегрована з плагінами для покращення функціональності.
 
@@ -119,13 +120,28 @@ git clone [https://github.com/your-username/lysoclear.git](https://github.com/Pa
 ## 📸 Скріншоти
 
 ### Головна сторінка
-![Головна сторінка](https://via.placeholder.com/800x400.png?text=Home+Page)
+![image](https://github.com/user-attachments/assets/71a52ca1-ce63-4ff6-b663-7d158cb194a2)
+
 
 ### Сторінка "About Lysoclear"
-![About Lysoclear](https://via.placeholder.com/800x400.png?text=About+Lysoclear)
+![image](https://github.com/user-attachments/assets/66dfa671-f7f0-4982-a6b1-cd930e80ea9c)
+
+### Сторінка "Treatment"
+![image](https://github.com/user-attachments/assets/b40c0f44-ac93-4bd9-ab15-b91b3fed382b)
+
 
 ### Сторінка "Partners"
-![Partners](https://via.placeholder.com/800x400.png?text=Partners+Page)
+![image](https://github.com/user-attachments/assets/1468f29c-aaec-47b3-b90b-8f5d9e33f806)
+
+### Сторінка "About us"
+![image](https://github.com/user-attachments/assets/d9e8f49b-e257-404f-b053-67072b897623)
+
+### Сторінка "News"
+![image](https://github.com/user-attachments/assets/dd07ab69-58e8-4167-8db4-f7b9202ecb3a)
+
+### Сторінка "Contact"
+![image](https://github.com/user-attachments/assets/968b283b-3199-4c9e-8737-ff17b976da8b)
+
 
 ---
 
