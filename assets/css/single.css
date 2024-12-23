@@ -1,0 +1,167 @@
+/* Загальні стилі для блоку запису */
+.single-post {
+
+    padding: 0; /* Видаляємо внутрішні відступи */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Робимо блок на всю ширину */
+    max-width: none; /* Видаляємо обмеження ширини */
+}
+
+/* Заголовок запису */
+.single-post .post-header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center; /* Центруємо заголовок */
+    padding: 0 20px; /* Додаємо внутрішні відступи для зручності читання */
+}
+
+/* Мета-інформація про запис */
+.single-post .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: center; /* Центруємо мета-інформацію */
+    padding: 0 20px; /* Додаємо внутрішні відступи для зручності читання */
+}
+
+/* Зображення запису */
+.single-post .post-thumbnail img {
+    width: 100%; /* Робимо зображення на всю ширину */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Текст запису */
+.single-post .post-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding: 0 20px; /* Додаємо внутрішні відступи для зручності читання */
+    max-width: 1200px; /* Обмежуємо ширину тексту для зручності читання */
+    margin: 0 auto; /* Центруємо текст */
+}
+
+/* Стилі для коментарів */
+.post-comments {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%; /* Робимо коментарі на всю ширину */
+    max-width: 1200px; /* Обмежуємо ширину коментарів */
+    margin: 0 auto; /* Центруємо коментарі */
+}
+
+.post-comments h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Центруємо заголовок коментарів */
+}
+
+.post-comments .comment-form textarea,
+.post-comments .comment-form input[type="text"],
+.post-comments .comment-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post-comments .comment-form input[type="submit"] {
+    background-color: #00a2ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Робимо кнопку блоковим елементом */
+    margin: 0 auto; /* Центруємо кнопку */
+}
+
+.post-comments .comment-form input[type="submit"]:hover {
+    background-color: #0078cc;
+}
+
+/* Стилі для списку коментарів */
+.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-list .comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.comment-list .comment .comment-author {
+    font-weight: bold;
+}
+
+.comment-list .comment .comment-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.comment-list .comment .comment-content {
+    margin-top: 10px;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    /* Зменшуємо розмір тексту на планшетах */
+    .single-post .post-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .single-post .post-meta {
+        font-size: 0.8rem;
+    }
+
+    .single-post .post-text {
+        font-size: 0.9rem;
+    }
+
+    .post-comments h3 {
+        font-size: 1.3rem;
+    }
+
+    .post-comments .comment-form input[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Зменшуємо розмір тексту на мобільних пристроях */
+    .single-post .post-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .single-post .post-meta {
+        font-size: 0.7rem;
+    }
+
+    .single-post .post-text {
+        font-size: 0.8rem;
+    }
+
+    .post-comments h3 {
+        font-size: 1.2rem;
+    }
+
+    .post-comments .comment-form input[type="submit"] {
+        padding: 6px 12px;
+    }
+}

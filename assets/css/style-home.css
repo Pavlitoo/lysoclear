@@ -1,0 +1,517 @@
+/* Hero Section */
+.hero-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 0;
+}   
+
+.hero-content .content-box {
+    background-color: rgba(0, 162, 255, 0.8);
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    padding-left: 25%;
+}
+
+.hero-content h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.hero-content p {
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 100px; 
+    width: auto; 
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #ffffff;
+    color: #00a2ff;
+}
+
+/* Адаптивні стилі для телефонів */
+@media (max-width: 480px) {
+    .hero-content {
+        position: static; /* Змінюємо позиціювання на статичне */
+        transform: none; /* Видаляємо трансформацію */
+        padding: 20px 0; /* Зменшуємо внутрішні відступи для мобільних пристроїв */
+    }
+
+    .hero-content .content-box {
+        max-width: 100%; /* Змінюємо на повну ширину для мобільних пристроїв */
+        padding: 15px; /* Зменшуємо внутрішні відступи */
+        padding-left: 15px; /* Зменшуємо відступ зліва */
+        padding-right: 15px; /* Додаємо відступ справа для рівномірного розподілу */
+    }
+
+    .hero-content h1 {
+        font-size: 14px; /* Зменшуємо розмір тексту для мобільних пристроїв */
+    }
+
+    .hero-content p {
+        font-size: 10px; /* Зменшуємо розмір тексту для мобільних пристроїв */
+    }
+
+    .hero-content .btn {
+        padding: 8px 12px; /* Зменшуємо розмір кнопки для мобільних пристроїв */
+        max-width: 150px; /* Обмежуємо ширину кнопки */
+        width: auto; /* Робимо ширину кнопки залежною від вмісту */
+        margin: 0 auto; /* Центруємо кнопку */
+        display: block; /* Робимо кнопку блоковим елементом для центрування */
+    }
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 0;
+    background-color: #00a2ff;
+    color: #ffffff;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.feature-item i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.features-grid .feature-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ffffff98;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Treatment Section */
+.treatment-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.treatment-image {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.treatment-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    color: #00a2ff;
+}
+
+.treatment-text h2 {
+    font-size: 1.5rem;
+    color: #00a2ff;
+    margin-bottom: 20px;
+}
+
+.treatment-text p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.treatment-text .btn {
+    background-color: transparent;
+    border: 2px solid #00a2ff;
+    color: #00a2ff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.treatment-text .btn:hover {
+    background-color: #00a2ff;
+    color: white;
+}
+
+/* Загальні стилі для секції */
+.stargardt-section {
+    display: flex;
+    align-items: stretch; /* Вирівнювання на всю висоту секції */
+    justify-content: center;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.content-box {
+    flex: 1;
+    background-color: #0078FF; /* Ліва частина синього кольору */
+    color: #ffffff;
+    padding: 30px; /* Зменшіть padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: #ffffff;
+    text-align: justify;
+}
+
+/* Стилі для кнопки */
+.learn-more-btn {
+    display: inline-block; 
+    padding: 10px 20px; /* Внутрішні відступи */
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    max-width: 100px; /* Обмежує ширину кнопки */
+    text-align: center; /* Центрує текст */
+}
+
+.learn-more-btn:hover {
+    background-color: #ffffff;
+    color: #00a2ff;
+}
+
+.image-box {
+    flex: 0 0 50%; /* Текст теперь занимает 50% ширины */
+    max-width: 50%; /* Ограничиваем максимальную ширину */
+    height: 100%; /* Забезпечує, що блок має висоту секції */
+    overflow: hidden; /* Запобігає виходу зображення за межі блоку */
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заповнює блок, зберігаючи пропорції зображення */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-content .content-box {
+        max-width: 90%;
+        padding: 20px;
+        padding-left: 10%;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Features Section */
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        flex: 1 1 100%;
+    }
+
+    /* Treatment Section */
+    .treatment-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .treatment-image, .treatment-text {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .treatment-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .treatment-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Stargardt Section */
+    .stargardt-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-box, .image-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .content-box {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f8f9fa; /* Світло-сірий фон */
+    padding: 60px 0; /* Відступи зверху і знизу */
+    text-align: center; /* Вирівнювання тексту по центру */
+}
+
+.testimonials .testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonials blockquote {
+    font-size: 1.8rem; /* Розмір тексту цитати */
+    font-style: italic; /* Курсив */
+    color: #333; /* Темно-сірий текст */
+    line-height: 1.6; /* Висота рядка для читабельності */
+    margin: 0 auto 20px auto; /* Центрування цитати */
+}
+
+.testimonials .author {
+    font-size: 1.2rem; /* Розмір тексту автора */
+    font-weight: bold; /* Напівжирний текст */
+    color: #007bff; /* Синій колір для автора */
+    margin-top: 10px; /* Відступ від цитати */
+}
+
+/* Налаштування точок слайдера */
+.slick-dots li button:before {
+    color: #007bff; /* Колір активних і неактивних точок */
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #007bff; /* Колір активної точки */
+}
+/* Section Divider */
+.section-divider {
+    margin-top: 110px; /* Отступы сверху и снизу */
+    border-top: 2px solid #00a2ff; /* Тонкая линия */
+    width: 100%; /* Растягиваем на всю ширину контейнера */
+}
+
+
+
+
+
+
+
+
+/* Latest News Section */
+    .latest-news {
+        padding: 50px 0;
+        text-align: center;
+        background-color: #f8f9fa;
+    }
+
+    .latest-news h2 {
+        font-size: 2rem;
+        color: #007bff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+    }
+
+    /* Slick Slider wrapper */
+    .latest-news .news-slider {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* News Item */
+    .latest-news .news-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .latest-news .news-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .latest-news .news-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .latest-news .news-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .latest-news h3 {
+        font-size: 1.25rem;
+        margin: 15px 0;
+        min-height: 3em; /* Ensures consistent height for titles */
+        overflow: hidden;
+    }
+
+    .latest-news .news-meta {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 15px;
+    }
+
+    .latest-news p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+        flex-grow: 1; /* Pushes the content to fill available space */
+    }
+
+    .latest-news .btn-learn-more {
+        display: inline-block; /* Запобігає розтягуванню кнопки */
+        padding: 10px 20px; /* Розмір кнопки */
+        background-color: transparent;
+        color: #00a2ff;
+        border: 2px solid #00a2ff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-top: 10px;
+        max-width: 100px; /* Скидає максимальну ширину */
+        width: auto; /* Ширина кнопки автоматична */
+        text-align: center;
+    }
+
+    .latest-news .btn-learn-more:hover {
+        background-color: #00a2ff; /* Змінюється фон */
+        color: white; /* Змінюється текст */
+    }
+
+
+    @media (max-width: 768px) {
+        .latest-news .news-image {
+            height: 150px;
+        }
+    }

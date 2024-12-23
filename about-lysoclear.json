@@ -1,0 +1,60 @@
+{
+    "key": "group_about_lysoclear",
+    "title": "About Lysoclear",
+    "fields": [
+        {
+            "key": "field_about_image",
+            "label": "Зображення",
+            "name": "about_image",
+            "type": "image",
+            "instructions": "Додайте зображення для сторінки About Lysoclear.",
+            "required": 1,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_about_text",
+            "label": "Текст",
+            "name": "about_text",
+            "type": "wysiwyg",
+            "instructions": "Додайте текст для сторінки About Lysoclear.",
+            "required": 1,
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_about_video",
+            "label": "Відео",
+            "name": "about_video",
+            "type": "oembed",
+            "instructions": "Додайте посилання на відео (YouTube, Vimeo тощо).",
+            "required": 1
+        },
+        {
+            "key": "field_about_quote",
+            "label": "Цитата",
+            "name": "about_quote",
+            "type": "wysiwyg",
+            "instructions": "Додайте цитату для сторінки About Lysoclear.",
+            "required": 1,
+            "toolbar": "basic",
+            "media_upload": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "about-lysoclear"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": []
+}

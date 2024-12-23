@@ -1,0 +1,117 @@
+/* Загальні стилі футера */
+.site-footer {
+    color: #ffffff;
+    text-align: center;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Верхня частина футера (Upper Footer) */
+.footer-top {
+    background-color: #006ba8; /* Синій фон */
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center; /* Центрування контенту */
+    align-items: center;
+    gap: 15px; /* Відступ між елементами */
+    flex-wrap: wrap; /* Перенесення елементів на новий рядок при малому екрані */
+}
+
+.footer-top p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+    white-space: nowrap; /* Текст не переноситься */
+}
+
+.footer-top a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-top .btn-message {
+    background-color: #00a2ff;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.footer-top .btn-message:hover {
+    background-color: #008bcc; /* Темніший синій при наведенні */
+    color: #ffffff;
+}
+
+/* Нижня частина футера (Lower Footer) */
+.footer-bottom {
+    background-color: #003459; /* Темно-синій фон */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    /* Верхня частина футера */
+    .footer-top {
+        flex-direction: column; /* Зміна на вертикальний макет */
+        gap: 10px; /* Зменшення відступів */
+    }
+
+    .footer-top p {
+        font-size: 1rem; /* Зменшення розміру тексту */
+        white-space: normal; /* Дозволяє перенесення тексту */
+        text-align: center; /* Центрування тексту */
+    }
+
+    .footer-top .btn-message {
+        font-size: 0.9rem; /* Зменшення розміру кнопки */
+        padding: 8px 12px; /* Зменшення відступів у кнопки */
+    }
+
+    /* Нижня частина футера */
+    .footer-bottom p {
+        font-size: 0.8rem; /* Збільшення розміру тексту */
+        line-height: 1.4; /* Зменшення міжрядкового інтервалу */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Верхня частина футера */
+    .footer-top p,
+    .footer-top .btn-message {
+        font-size: 0.9rem; /* Додаткове зменшення розміру тексту */
+    }
+
+    .footer-top .btn-message {
+        padding: 6px 10px; /* Додаткове зменшення відступів у кнопки */
+    }
+
+    /* Нижня частина футера */
+    .footer-bottom p {
+        font-size: 0.75rem; /* Додаткове зменшення розміру тексту */
+    }
+}

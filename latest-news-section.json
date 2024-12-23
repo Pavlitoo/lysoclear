@@ -1,0 +1,67 @@
+[
+    {
+        "key": "group_latest_news_section",
+        "title": "Latest News Section",
+        "fields": [
+            {
+                "key": "field_show_latest_news",
+                "label": "Показувати секцію",
+                "name": "show_latest_news",
+                "type": "true_false",
+                "instructions": "Дозволяє вмикати/вимикати секцію на сторінці.",
+                "default_value": 1
+            },
+            {
+                "key": "field_latest_news_title",
+                "label": "Заголовок секції",
+                "name": "latest_news_title",
+                "type": "text",
+                "instructions": "Дозволяє змінювати заголовок секції.",
+                "default_value": "Latest News from Lysoclear"
+            },
+            {
+                "key": "field_latest_news_count",
+                "label": "Кількість постів",
+                "name": "latest_news_count",
+                "type": "number",
+                "instructions": "Вкажи кількість останніх постів для відображення.",
+                "default_value": 7
+            },
+            {
+                "key": "field_use_slider",
+                "label": "Використовувати слайдер",
+                "name": "use_slider",
+                "type": "true_false",
+                "instructions": "Дозволяє вмикати/вимикати слайдер для відображення постів.",
+                "default_value": 1
+            },
+            {
+                "key": "field_latest_news_image",
+                "label": "Зображення секції",
+                "name": "latest_news_image",
+                "type": "image",
+                "instructions": "Дозволяє завантажити власну картинку для секції.",
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": [],
+        "active": true,
+        "description": ""
+    }
+]

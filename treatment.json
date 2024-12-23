@@ -1,0 +1,128 @@
+{
+    "key": "group_page_two",
+    "title": "Page Two",
+    "fields": [
+        {
+            "key": "field_page_two_title",
+            "label": "Заголовок сторінки",
+            "name": "page_two_title",
+            "type": "text",
+            "instructions": "Додайте заголовок для сторінки.",
+            "required": 1
+        },
+        {
+            "key": "field_page_two_description",
+            "label": "Опис сторінки",
+            "name": "page_two_description",
+            "type": "wysiwyg",
+            "instructions": "Додайте опис сторінки з можливістю форматування.",
+            "required": 1,
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_page_two_image",
+            "label": "Зображення",
+            "name": "page_two_image",
+            "type": "image",
+            "instructions": "Додайте зображення для сторінки.",
+            "required": 1,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_page_two_services",
+            "label": "Список послуг",
+            "name": "page_two_services",
+            "type": "repeater",
+            "instructions": "Додайте послуги з підзаголовками, описами та іконками.",
+            "required": 1,
+            "sub_fields": [
+                {
+                    "key": "field_service_title",
+                    "label": "Підзаголовок послуги",
+                    "name": "service_title",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_service_description",
+                    "label": "Опис послуги",
+                    "name": "service_description",
+                    "type": "textarea",
+                    "required": 1
+                },
+                {
+                    "key": "field_service_icon",
+                    "label": "Іконка послуги",
+                    "name": "service_icon",
+                    "type": "image",
+                    "instructions": "Додайте іконку для послуги.",
+                    "required": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all"
+                }
+            ]
+        },
+        {
+            "key": "field_page_two_advantages",
+            "label": "Переваги",
+            "name": "page_two_advantages",
+            "type": "repeater",
+            "instructions": "Додайте переваги з іконками та короткими описами.",
+            "required": 0,
+            "sub_fields": [
+                {
+                    "key": "field_advantage_icon",
+                    "label": "Іконка переваги",
+                    "name": "advantage_icon",
+                    "type": "image",
+                    "instructions": "Додайте іконку для переваги.",
+                    "required": 0,
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all"
+                },
+                {
+                    "key": "field_advantage_title",
+                    "label": "Заголовок переваги",
+                    "name": "advantage_title",
+                    "type": "text",
+                    "required": 1
+                },
+                {
+                    "key": "field_advantage_description",
+                    "label": "Опис переваги",
+                    "name": "advantage_description",
+                    "type": "textarea",
+                    "required": 1
+                }
+            ]
+        },
+        {
+            "key": "field_page_two_cta",
+            "label": "Кнопка 'Записатися'",
+            "name": "page_two_cta",
+            "type": "text",
+            "instructions": "Додайте текст для кнопки 'Записатися' (наприклад, 'Записатися на прийом').",
+            "required": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "page-two"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": []
+}

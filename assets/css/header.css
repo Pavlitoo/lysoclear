@@ -1,0 +1,109 @@
+
+/* Загальний стиль для хедера */
+.site-header {
+    background-color: #ffffff; /* Колір фону */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    padding: 10px 0; /* Відступи зверху і знизу */
+    position: sticky; /* Фіксація зверху */
+    top: 0;
+    z-index: 1000;
+    margin: 0; /* Видаляємо зовнішні відступи */
+}
+
+/* Контейнер із відступами */
+.site-header .container {
+    max-width: 900px; /* Максимальна ширина */
+    margin: 0 auto; /* Центрування */
+    padding: 0 20px; /* Однакові відступи справа і зліва */
+}
+
+/* Вирівнювання елементів у хедері */
+.header-inner {
+    display: flex;
+    justify-content: space-between; /* Простір між логотипом і меню */
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+/* Логотип */
+.logo {
+    flex-shrink: 0; /* Запобігання стисненню логотипа */
+}
+
+.logo img {
+    max-height: 60px; /* Обмеження висоти */
+}
+
+/* Меню */
+.main-menu {
+    flex-shrink: 0; /* Запобігання стисненню меню */
+}
+
+.main-menu .menu {
+    list-style: none; /* Видалення маркерів списку */
+    margin: 0; /* Видаляємо зовнішні відступи */
+    padding: 0; /* Видаляємо внутрішні відступи */
+    display: flex; /* Горизонтальне розташування */
+    gap: 20px; /* Відстань між пунктами меню */
+}
+
+.main-menu .menu li {
+    display: inline-block;
+}
+
+.main-menu .menu li a {
+    text-decoration: none; /* Без підкреслення */
+    color: #333; /* Колір тексту */
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Плавний ефект при наведенні */
+}
+
+.main-menu .menu li a:hover {
+    color: #00a2ff; /* Колір при наведенні */
+}
+
+/* Кнопка для мобільного меню */
+.mobile-menu-toggle {
+    display: none; /* Приховуємо на великих екранах */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Колір кнопки */
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block; /* Показуємо на мобільних пристроях */
+    }
+
+    .main-menu {
+        display: none; /* Приховуємо меню за замовчуванням */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Відступ від хедера */
+        right: 20px; /* Відступ з правого боку */
+        background: #fff; /* Фон меню */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь */
+        z-index: 1000; /* Значення z-index для перекриття інших елементів */
+        padding: 20px; /* Внутрішні відступи */
+    }
+
+    .main-menu.active {
+        display: flex; /* Показуємо меню при активній кнопці */
+    }
+
+    .main-menu .menu {
+        flex-direction: column; /* Вертикальне меню */
+        gap: 10px; /* Відстань між пунктами */
+    }
+
+    .main-menu .menu li {
+        display: block; /* Змінюємо на блочний елемент */
+    }
+
+    .main-menu .menu li a {
+        font-size: 14px; /* Зменшуємо розмір тексту */
+    }
+}
