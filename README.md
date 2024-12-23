@@ -178,4 +178,15 @@ git clone [[https://github.com/your-username/lysoclear.git](https://github.com/P
 
 ---
 
+### QR-код для сайту
+
+Щоб відвідати наш веб-сайт, просто скануйте QR-код нижче:
+
+![image](https://github.com/user-attachments/assets/f39f9b07-f165-4a62-ba38-b303f8c4a45b)
+
+
+Посилання на сайт: [lysoclear](http://ready-for-feedback3.com/ppfc/luhovyi/)
+
+---
+
 ### Дякую за увагу! 😊
