@@ -40,7 +40,7 @@
 
 ### 1. Клонування репозиторію
 ```bash
-git clone [[https://github.com/your-username/lysoclear.git](https://github.com/Pavlitoo/lysoclear.git)]
+git clone [(https://github.com/Pavlitoo/lysoclear.git)]
 ```
 
 ### 2. Встановлення WordPress
